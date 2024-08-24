@@ -1,0 +1,87 @@
+@import '../fonts/gilroy/index.css';
+@import './abstract/';
+@import "./layout/";
+@import "./components/";
+@import "./utils/";
+@import "./pages/";
+@import '~node_modules/animate.css/animate.min.css';
+@import "~aos/dist/aos.css";
+
+
+
+html,body{
+    font-family: var(--main-font);
+    font-size: var(--font-size-main);
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    color: var(--color-three);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch
+}
+a{
+    color: inherit;
+}
+.container{
+    max-width: 1570px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    &:not(.allow-overflow){
+        //overflow-x: hidden;
+    }
+    @media(max-width: 1740px){
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media(max-width: 1280px){
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    @media(max-width:992px){
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+.red_header{
+    font-size: 26px;
+    color: var(--color-two);
+    font-weight: 600;
+}
+
+
+.black_header{
+    font-size: 45px;
+    font-weight: bold;
+    border-bottom: 6px solid var(--color-three);
+    display: inline-flex;
+    padding: 10px 0px;
+}
+
+.no-mobile{
+    @media(max-width: 992px){
+        display: none;
+    }
+}
+.only-mobile{
+    @media(min-width: 992px){
+        display: none;
+    }
+}
+
+.white_confidence{
+    font-size: 12px;
+    margin-top: 10px !important;
+    color: #e1e1e1;
+}
+
+.black_confidence{
+    font-size: 12px;
+    margin-top: 10px !important;
+}

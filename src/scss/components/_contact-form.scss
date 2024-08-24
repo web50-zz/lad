@@ -1,0 +1,119 @@
+.contact-form{
+    background-color: var(--color-six);
+    padding: 120px 0px;
+    @media(max-width:992px){
+        padding: 60px 0px;
+    }
+    .container{
+        display: flex;
+        gap: 60px;
+        @media(max-width:992px){
+            flex-direction: column;
+            gap: 20px;
+        }
+        >div:first-child{
+            font-size: 18px;
+            >div:first-child{
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__content{
+        display: grid;
+        grid-template-columns: 300px 416px;
+        gap: 10px;
+        @media(max-width:992px){
+            grid-template-columns: 1fr;
+        }
+        input[type=text],input[type=tel],input[type=email],textarea{
+            background-color: #FFFFFF;
+            padding: 15px;
+            border: none;
+            width: 100%;
+            color: #a5a5a5;
+            box-sizing: border-box;
+            font-size: 16px;
+            &::placeholder{
+                color: #a5a5a5;
+                
+            }
+            width: 278px;
+            border-radius: 4px;
+        }
+        textarea{
+            height: 126px;
+            resize: none;
+            width:100%;
+        }
+        input[type=submit]{
+            background: var(--color-six);
+            color: var(--color-two);
+            font-size: 16px;
+            text-transform: uppercase;
+            border: 0px;
+            box-sizing:border-box;
+            cursor: pointer;
+            padding: 10px 0px 5px;
+            border-bottom: 2px solid var(--color-two);
+            display: inline-flex;
+            border-radius: 0px;
+            -webkit-border-radius:0px;
+            -webkit-appearance:none;
+        }
+    }
+    form{
+        display: flex;
+        gap: 50px;
+        flex-wrap: wrap;
+        width: 550px;
+        @media(max-width:992px){
+            flex-direction: column;
+            width: 100%;
+        }
+        .wpcf7-response-output{
+            margin: 0px;
+            padding: 5px;
+        }
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+
+    .wpcf7-form.init{
+        margin: 0px;
+        padding: 0px;
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .wpcf7-form.sent{
+        margin: 0px;
+        padding: 0px;
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .wpcf7-form.invalid{
+        margin: 0px;
+        padding: 0px;
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .wpcf7-form.submitting{
+        margin: 0px;
+        padding: 0px;
+        p{
+            margin: 0px;
+            padding: 0px;
+        }
+    }
+    .wpcf7-spinner{
+        display: none !important;
+    }
+}

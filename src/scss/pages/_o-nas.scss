@@ -1,0 +1,117 @@
+.o-nas{
+    &__quote{
+        display: flex;
+        gap: 60px;
+        margin-top: 100px;
+        position: relative;
+        @media(max-width:768px){
+            flex-direction: column;
+            margin-top: 40px;
+        }
+        @media(min-width: 1000px){
+            &:before{
+                content: ' ';
+                background-image: url('/wp-content/themes/lad/assets/images/decors/half_circle_grey_blured.svg');
+                width: 250px;
+                height: 250px;
+                position: absolute;
+                top: -90px;
+                left: 55%;
+            }
+        }
+        &-left{
+            img{
+                width: 100%;
+            }
+            max-width: 526px;
+            @media(max-width:992px){
+                max-width: 300px;
+            }
+        }
+        &-right{
+            padding-top: 140px;
+            @media(max-width:992px){
+                padding-top: 0px;
+            }
+            img{
+                @media(max-width:992px){
+                    max-width: 70px;
+                }
+            }
+        }
+        &-std{
+           // font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 22px;
+            font-weight:bold;
+            line-height: 159%;
+            margin-top: 40px;
+            padding-left: 30px;
+            font-style: italic;
+            &:before{
+                content: '"';
+                font-size: 170px;
+                position: absolute;
+                left: 0px;
+                top: -90px;
+                color: var(--color-two);
+                transform: rotate(180deg);
+                font-weight: 600;
+                @media(max-width: 768px){
+                    font-size: 100px;
+                    left: 10px;
+                    top: -50px;
+                }
+            }
+            &:after{
+                content: '"';
+                font-size: 170px;
+                position: absolute;
+                right: 0px;
+                bottom: -70px;
+                color: var(--color-two);
+                font-weight: 600;
+                @media(max-width: 768px){
+                    font-size: 100px;
+                    right: 10px;
+                    bottom: -40px;
+                }
+            }
+            @media(max-width:992px){
+                font-size: 14px;
+            }
+            br{
+                @media(max-width:992px){
+                    display: none;
+                }
+            }
+        }
+        &-signature{
+            line-height: 156%;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-left: 120px;
+            @media(max-width:992px){
+                font-size: 14px;
+            }
+        }
+    }
+    &__text{
+        margin-top: 80px;
+        margin-bottom: 150px;
+        font-size: 20px;
+        line-height: 152%;
+        padding-left: 100px;
+        padding-right: 100px;
+        max-width: 1400px;
+        box-sizing: border-box;
+        @media(max-width:992px){
+            padding-left: 0px;
+            padding-right: 0px;
+            font-size: 16px;
+            margin-top: 60px;
+        }
+    }
+    &__quote-end{
+        margin-left: 90%;
+    }
+}
